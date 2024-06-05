@@ -2,6 +2,13 @@
 
 **YOLO-HiVis** is an experimental computer vision project designed to detect and track individuals wearing high-visibility vests using a custom-trained YOLO model.
 
+# Table of Contents
+
+1. [Key Features](#key-features)
+2. [Dependencies](#dependencies)
+3. [Installation](#installation)
+4. [Further Training the Model](#further-training-the-model)
+
 ## Key Features:
 
 1. **Object Detection:** The project utilizes a custom-trained YOLO (You Only Look Once) model to perform object detection. It identifies individuals and high-visibility jackets within images or video frames.
@@ -14,17 +21,31 @@
 
 ## Dependencies
 
-- Ultralytics
 - OpenCV
+- Ultralytics
+- Tensorflow
 
 ## Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your_username/YOLO-HiVis.git
+   git clone https://github.com/tudorhirtopanu/YOLO-HiVis.git
    ```
-2. Install Dependencies:
+2. Inside the project, install the deep sort repository as a dependency :
     ```bash
-    pip install ultralytics opencv-python
+    git clone https://github.com/tudorhirtopanu/deep_sort.git
    ```
+3. Install dependencies if you haven't already :
+   ```bash
+    pip install opencv-python ultralytics tensorflow
+   ```
+4. Run main.py
+
+## Further Training the Model
+
+1. In config.yaml specify the path to the dataset.
+
+**Note:** You can download the dataset from [Kaggle](https://www.kaggle.com/datasets/tudorhirtopanu/yolo-highvis-and-person-detection-dataset)
+
+2. Run ```Train.py``` specifying the ```model``` path.
