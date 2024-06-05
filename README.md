@@ -1,14 +1,16 @@
 # YOLO-HiVis
 
-YOLO-HiVis is a computer vision project that utilizes a custom trained YOLO model to detect and classify high-visibility vests and people in images or video streams. Alongside the ability to detect these objects, I also wanted to differentiate between the presence of a high-vis and someone wearing one. Furthermore, there exists the case where there is a high-vis being worn, but multiple person bounding boxes make it unclear as to who is wearing the high vis. My solution to this was to use IOU algorithms in order to ensure accurate identification even when multiple person bounding boxes overlap.
+**YOLO-HiVis** is an experimental computer vision project designed to detect and track individuals wearing high-visibility vests using a custom-trained YOLO model.
 
-## Features
+## Key Features:
 
-- Detection and classification of high-visibility vests & people in images or video streams.
-- Algorithms for calculating intersection over union (IoU) and determining bounding box overlaps.
-- Trained on over 25,000 labels in 8,000+ images
-- Understand the state/context of high-vis, is it only present or is it being worn
-- Identify who is wearing the high vis, even when there are overlapping bounding boxes for people
+1. **Object Detection:** The project utilizes a custom-trained YOLO (You Only Look Once) model to perform object detection. It identifies individuals and high-visibility jackets within images or video frames.
+
+2. **Intersection over Union (IoU) Algorithm:** After object detection, an Intersection over Union (IoU) algorithm is applied to handle overlapping bounding boxes of individuals and high-visibility jackets. This algorithm determines whether a person is wearing a high-visibility clothing by assessing the overlap between the detected objects.
+
+3. **Deep SORT Algorithm:** Individuals identified as wearing high-visibility jackets are then passed into the Deep SORT (Simple Online and Realtime Tracking) algorithm for tracking. Deep SORT allows for the continuous monitoring of individuals wearing high-visibility gear across frames or video sequences.
+
+**Note:** While the model demonstrates strong performance, there is room for improvement. The the project's dataset is available on [Kaggle](https://www.kaggle.com/datasets/tudorhirtopanu/yolo-highvis-and-person-detection-dataset), providing opportunities for further exploration and training.
 
 ## Dependencies
 
