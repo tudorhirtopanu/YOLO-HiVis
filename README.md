@@ -1,4 +1,8 @@
 # YOLO-HiVis
+<p float="left">
+  <img src="https://github.com/tudorhirtopanu/YOLO-HiVis/assets/122214687/3cd1045c-c734-4d18-aba5-b35f04fb1f1d" width="45%" />
+  <img src="https://github.com/tudorhirtopanu/YOLO-HiVis/assets/122214687/cf23c6a3-7ebb-409f-a709-f5b162654780" width="45%" />
+</p>
 
 **YOLO-HiVis** is an experimental computer vision project designed to detect and track individuals wearing high-visibility vests using a custom-trained YOLO model.
 
